@@ -18,4 +18,11 @@ function generateCell(size) {
 
 }
 
+function applyHover() {
+    this.classList.add("hover");
+}
+
 generateGrid(8);
+
+cells = document.querySelectorAll(".cell");
+cells.forEach((cell) => cell.addEventListener("mouseover", applyHover));

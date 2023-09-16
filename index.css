@@ -27,3 +27,7 @@ html, body {
     background-color: white;
     flex-grow: 1;
 }
+
+.hover {
+    background-color: darkslategray;
+}
