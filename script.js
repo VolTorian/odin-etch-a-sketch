@@ -14,10 +14,6 @@ function generateGrid(size) {
     }
 }
 
-function generateCell(size) {
-
-}
-
 function applyHover() {
     this.classList.add("hover");
 }
