@@ -1,7 +1,5 @@
 html, body {
     height: 100%;
-    display: flex;
-    /* justify-content: center; */
 }
 
 .grid {
@@ -12,7 +10,7 @@ html, body {
     border-width: 5px;
     display: flex;
     flex-direction: column;
-    /* flex-wrap: wrap; */
+    margin: auto;
 }
 
 .row {
@@ -22,7 +20,7 @@ html, body {
 
 .cell {
     border-style: solid;
-    border-color: gray;
+    border-color: lightgray;
     border-width: 1px;
     background-color: white;
     flex-grow: 1;
@@ -30,4 +28,11 @@ html, body {
 
 .hover {
     background-color: darkslategray;
+    border-color: darkslategray;
+}
+
+.reset {
+    margin: 20px auto;
+    font-size: large;
+    display: block;
 }
