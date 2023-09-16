@@ -29,7 +29,14 @@ function clearGrid() {
 }
 
 function resetGrid() {
-    let size = prompt("Enter a grid size:");
+    let input;
+    let size;
+
+    while (!Number.isInteger(input)) {
+        input = parseInt(prompt("Enter a grid size, between 1 and 100:"));
+    }
+
+    size = Math.max(1, Math.min(100, input));
     clearGrid();
     generateGrid(size);
     cells = document.querySelectorAll(".cell");
