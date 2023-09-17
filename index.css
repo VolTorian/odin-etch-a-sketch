@@ -31,8 +31,19 @@ html, body {
     border-color: darkslategray;
 }
 
-.reset {
-    margin: 20px auto;
+button {
     font-size: large;
+    margin: 0 10px;
+}
+
+.reset {
+    margin: 10px auto 10px auto;
     display: block;
+}
+
+.settings {
+    display: flex;
+    background-color: lightblue;
+    margin: 10px auto 10px auto;
+    justify-content: center;
 }
