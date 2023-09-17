@@ -43,7 +43,6 @@ button {
 
 .settings {
     display: flex;
-    background-color: lightblue;
     margin: 10px auto 10px auto;
     justify-content: center;
 }
