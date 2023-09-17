@@ -3,6 +3,7 @@ const reset = document.querySelector(".reset");
 const modeButtons = document.querySelectorAll(".mode");
 
 let currentMode = "solid";
+let lastSize = 8;
 
 reset.addEventListener("click", resetGrid);
 modeButtons.forEach((button) => button.addEventListener("click", changeMode));
@@ -49,10 +50,11 @@ function resetGrid() {
     let size;
 
     while (!Number.isInteger(input)) {
-        input = parseInt(prompt("Enter a grid size, between 1 and 100:"));
+        input = parseInt(prompt("Enter a grid size, between 1 and 100:", lastSize));
     }
 
     size = Math.max(1, Math.min(100, input));
+    lastSize = size;
     clearGrid();
     generateGrid(size);
     cells = document.querySelectorAll(".cell");
